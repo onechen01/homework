@@ -4,49 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrap">
-        <div class="header">
-            <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png" alt="logo">
+    <header class="site-header">
+      <div class="container header-container">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">部落格</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true" alt="個人照">
         </div>
-        <div class="content">
-            <div class="course">
-                <div class="course-item">
-                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HTML5" width="100%">
-                    <h2>HTML5 基礎教學</h2>
-                    <p>
-                        主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法
-                    </p>
-                </div>
-                <div class="course-item">
-                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="響應式網站" width="100%">
-                    <h2>響應式網站設計</h2>
-                    <p>
-                        響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
-                    </p>
-                </div>
-                <div class="course-item">
-                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery" width="100%">
-                    <h2>jQuery 實戰教學</h2>
-                    <p>
-                        本課程有以下特色：
-                    </p>
-                    <ul>
-                        <li>瞭解變數的使用方法</li>
-                        <li>學習並操作 DOM</li>
-                        <li>學習基本數學運算方法</li>
-                        <li>套件的操作及運用</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="hero-right">
+          <h1>BLOG</h1>
+          <p>前端工程師 & 職涯諮詢師</p>
         </div>
-        <div class="footer">
-            <p>
-                六角表尾
-            </p>
+      </div>
+    </section>
+  
+    <section class="feature-post">
+        <div class="feature-container">
+        <div class="post-img">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/About%20Section.png?raw=true" alt="前端開發">
         </div>
+        <div class="post-content">
+          <div class="card">
+           <div class="meta">
+            <span class="date">2024/10/21</span>
+            <span class="tags">#前端開發 #職涯成長</span>
+            <span class="badge">最新文章</span>
+           </div>
+        <h2>自學前端不用怕：從零開始的三大關鍵</h2>
+          <p>嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」 ...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+      </div>
+    </section>
+
+      <!-- 搜尋區 -->
+  <section class="article-search">
+    <div class="container">
+      <div class="search-box">
+        <input type="text" placeholder="搜尋你感興趣的文章" />
+      </div>
     </div>
-</body>
-</html>
+  </section>
+  
+    <section class="article-grid">
+      <div class="container">
+        <div class="card">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo4.png?raw=true" alt="React">
+          <div class="meta">
+            <span class="date">2024/10/11</span>
+            <span class="tags">#React #入門基礎</span>
+          </div>
+          <h2>React 入門不再迷惘：三步驟帶你上手核心概念</h2>
+          <p>你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo1.png?raw=true" alt="作品集">
+          <div class="meta">
+            <span class="date">2024/09/07</span>
+            <span class="tags">#作品集 #求職攻略</span>
+          </div>
+          <h2>前端作品集打造指南：讓你的專案成為履歷亮點</h2>
+          <p>對正在求職的前端工程師而言，作品集往往是第一個「說話」的利器。當面試官瀏覽你的網頁作品時，能夠快速了...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo2.png?raw=true" alt="CSS設計">
+          <div class="meta">
+            <span class="date">2024/09/03</span>
+            <span class="tags">#CSS設計 #視覺體驗</span>
+          </div>
+          <h2>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h2>
+          <p>在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo6.png?raw=true" alt="轉職工程師">
+          <div class="meta">
+            <span class="date">2024/07/09</span>
+            <span class="tags">#轉職工程師 #學習心法</span>
+          </div>
+          <h2>前端轉職必讀：從自學者到工程師的心路歷程</h2>
+          <p>能夠憑藉自學進入前端領域，聽起來令人振奮，但實際過程中可能遇到的挫折與疑慮，卻常常令人猶豫。回想當初我...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo3.png?raw=true" alt="前端面試">
+          <div class="meta">
+            <span class="date">2024/07/08</span>
+            <span class="tags">#面試準備 #工程師求職</span>
+            <span class="badge">人氣文章</span>
+          </div>
+          <h2>前端面試不再慌：破解常見提問的三大策略</h2>
+          <p>面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo5.png?raw=true" alt="Vue3">
+          <div class="meta">
+            <span class="date">2024/06/29</span>
+            <span class="tags">#Vue3 #框架學習</span>
+          </div>
+          <h2>Vue 3 新手指南：快速掌握 Composition API 與關鍵特色</h2>
+          <p>許多前端開發者對 Vue 一直情有獨鍾，因為它易上手又靈活。隨著 Vue 3 上線，Composition API 的導入更是大...</p>
+          <a href="#" class="button">閱讀內文</a>
+        </div>
+
+        <div class="card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo9.png?raw=true" alt="Git">
+            <div class="meta">
+              <span class="date">2024/05/04</span>
+              <span class="tags">#Git #協作流程</span>
+            </div>
+            <h2>Git 與版本控制：前端協作的必修課</h2>
+            <p>當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git 不僅能記錄程式碼變動，更能確保...</p>
+            <a href="#" class="button">閱讀內文</a>
+        </div>
+          
+        <div class="card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo7.png?raw=true" alt="SEO">
+            <div class="meta">
+              <span class="date">2024/05/01</span>
+              <span class="tags">#SEO #網頁曝光</span>
+            </div>
+            <h2>SEO 與前端最佳實踐：讓搜尋引擎看見你的網站</h2>
+            <p>即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到它，那就形同隱形。身為前端工程師，瞭解基本的 SEO 概念與技術是讓網站脫穎而出的關鍵。這篇文章將分享我在前端實作時，常用...</p>
+            <a href="#" class="button">閱讀內文</a>
+        </div>
+
+        <div class="card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo8.png?raw=true" alt="自動化">
+            <div class="meta">
+              <span class="date">2024/06/29</span>
+              <span class="tags">#專案維護 #自動化測試</span>
+            </div>
+            <h2>穩定前端環境的祕訣：依賴管理與自動化流程</h2>
+            <p>前端世界日新月異，第三方套件與工具種類繁多，一個不留神就可能引爆依賴衝突。為了確保專案長期維護的穩定度，建立一套良好的依賴管理與自動化流程至關重要。在本文中，我會分享從套件更新到測試部署的實務經驗，讓你在開發時不再手忙腳亂...</p>
+            <a href="#" class="button">閱讀內文</a>
+        </div>
+
+        <div class="card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo11.png?raw=true" alt="TypeScript">
+            <div class="meta">
+              <span class="date">2024/02/17</span>
+              <span class="tags">#Vue3 #框架學習</span>
+            </div>
+            <h2>TypeScript 快速上手：強化前端程式碼的安全與可讀性</h2>
+            <p>許多前端開發者在成長過程中都曾面臨動態語言帶來的錯誤風險，而 TypeScript 的出現正是為了改善這種情況。它能在開發階段即發現型別錯誤，並帶來更友善的程式碼提示。本篇文章將介紹如何在前端專...</p>
+            <a href="#" class="button">閱讀內文</a>
+        </div>
+
+        <div class="card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo10.png?raw=true" alt="測試">
+            <div class="meta">
+              <span class="date">2024/02/07</span>
+              <span class="tags">#測試框架 #品質保證</span>
+            </div>
+            <h2>掌握前端測試：從單元測試到端對端測試的完整攻略</h2>
+            <p>寫程式容易，但要確保程式在多種情境、裝置都能正常運行就沒那麼簡單了。這時「測試」便成了維持程式品質的關鍵環節。從最基礎的單元測試，到模擬使用者行為的端對端測試，每一種測試方式都有它...</p>
+            <a href="#" class="button">閱讀內文</a>
+        </div>
+
+        
+
+      </div>
+    </section>
+  
+    <!-- 分頁 -->
+  <div class="pagination">
+    <ul class="pagination-list">
+      <li>&lt;</li>
+      <li class="active">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>…</li>
+      <li>&gt;</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="email">alysewang@hexschool.com</div>
+        <div class="social">
+          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon.png?raw=true" alt="YouTube" /></a>
+          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-1.png?raw=true" alt="Podcast" /></a>
+          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-2.png?raw=true" alt="Facebook" /></a>
+          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/icons8-linkedin.png?raw=true" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-3.png?raw=true" alt="Instagram" /></a>
+        </div>
+      </div>
+      <div class="copyright">© 2025 Alyse Wang. All rights reserved.</div>
+    </div>
+  </footer>
+  
