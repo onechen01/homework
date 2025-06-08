@@ -74,38 +74,38 @@ img {
   color: #000;
 }
 
-/* Hero */
-.hero {
+/* profile */
+.profile {
   background-color: #f5f5f5;
 
 }
 
-.hero-container {
+.profile-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
 
-.hero-left, .hero-right {
+.profile-left, .profile-right {
     flex: 1 0 50%;
     height: 100%;
   }
 
-.hero-left img {
+.profile-left img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.hero-right h1 {
+.profile-right h1 {
   font-size: 120px;
   font-weight: 900;
   color: #0027D5;
   margin-bottom: 12px;
 }
 
-.hero-right p {
+.profile-right p {
   font-size: 28px;
   color: #0027D5;
   font-weight: 500;
@@ -303,20 +303,20 @@ img {
 
 /* 響應式 */
 @media (max-width: 768px) {
-  .hero-container,
+  .profile-container,
   .feature-post .feature-container {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
   }
 
-  .hero-right {
+  .profile-right {
     padding: 24px 16px;
     width: 100%;
   }
 
 
-  .hero-right {
+  .profile-right {
     text-align: left;
   }
 
